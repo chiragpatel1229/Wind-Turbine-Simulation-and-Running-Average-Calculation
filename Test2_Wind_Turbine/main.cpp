@@ -16,8 +16,8 @@ void loadSpeedFromFile();                  // Loads the speed value from the con
 void drawWindTurbine();                    // Draws the wind turbine silhouette
 
 /**
- * Renders the wind turbine scene.
- * Clears the buffer, sets the view, and draws the turbine.
+ -- Renders the wind turbine scene.
+ -- Clears the buffer, sets the view, and draws the turbine.
  */
 void renderScene() {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);  // Clear color and depth buffers
@@ -32,8 +32,8 @@ void renderScene() {
 }
 
 /**
- * Draws the wind turbine silhouette, including the tower, hub, and blades.
- * Uses OpenGL primitives to create a simplified 2D representation.
+ -- Draws the wind turbine silhouette, including the tower, hub, and blades.
+ -- Uses OpenGL primitives to create a simplified 2D representation.
  */
 void drawWindTurbine() {
     glColor3f(0.0f, 0.0f, 0.0f);  // Set color to black for the turbine silhouette
@@ -78,9 +78,9 @@ void drawWindTurbine() {
 }
 
 /**
- * Updates the turbine rotation angle based on the speed level.
- * Called every 16ms for smooth animation (approximately 60 FPS).
- * @param value: Placeholder for GLUT timer (not used).
+ -- Updates the turbine rotation angle based on the speed level.
+ -- Called every 16ms for smooth animation (approximately 60 FPS).
+ -- @param value: Placeholder for GLUT timer (not used).
  */
 void updateRotation(int value) {
     turbineRotationAngle += turbineSpeedLevel;  // Increment angle based on speed
@@ -93,8 +93,8 @@ void updateRotation(int value) {
 }
 
 /**
- * Loads the turbine speed level from the settings file.
- * Validates the speed value (must be between 1 and 10).
+ -- Loads the turbine speed level from the settings file.
+ -- Validates the speed value (must be between 1 and 10).
  */
 void loadSpeedFromFile() {
     std::ifstream file(speedConfigFile);
@@ -115,8 +115,8 @@ void loadSpeedFromFile() {
 }
 
 /**
- * Periodically reads the speed setting from the file every 5 seconds.
- * @param value: Placeholder for GLUT timer (not used).
+ -- Periodically reads the speed setting from the file every 5 seconds.
+ -- @param value: Placeholder for GLUT timer (not used).
  */
 void updateSpeedConfig(int value) {
     loadSpeedFromFile();  // Read and update the speed
@@ -124,8 +124,8 @@ void updateSpeedConfig(int value) {
 }
 
 /**
- * Initializes OpenGL settings for rendering the scene.
- * Sets up the projection matrix and background color.
+ -- Initializes OpenGL settings for rendering the scene.
+ -- Sets up the projection matrix and background color.
  */
 void init() {
     glClearColor(1.0, 1.0, 1.0, 1.0);  // Set background to white
@@ -137,10 +137,10 @@ void init() {
 }
 
 /**
- * Main function to initialize GLUT, set up the window, and start the animation loop.
- * @param argc: Number of command-line arguments.
- * @param argv: Array of command-line arguments.
- * @return: Exit status (0 for success).
+ -- Main function to initialize GLUT, set up the window, and start the animation loop.
+ -- @param argc: Number of command-line arguments.
+ -- @param argv: Array of command-line arguments.
+ -- @return: Exit status (0 for success).
  */
 int main(int argc, char** argv) {
     loadSpeedFromFile();  // Load initial speed setting
