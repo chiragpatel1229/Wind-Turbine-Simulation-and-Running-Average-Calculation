@@ -75,13 +75,7 @@ Wind Turbine Simulation and Running Average Calculation/
 ## Contributing
 This repository is for demonstration purposes. Feedback or suggestions are welcome via issues or pull requests.
 
-## License
-This project is licensed under the [MIT License](LICENSE) - see the `LICENSE` file for details.
-
 ## Contact
 - **Name**: Chirag Patel
 - **LinkedIn**: [[linkedin.com/in/chiragpatel](https://www.linkedin.com/in/chirag-patel-794084104/)]
 - Feel free to connect for collaboration or further discussion!
-
-## Acknowledgments
-- Gratitude to the open-source communities for tools like OpenGL and PyInstaller.
