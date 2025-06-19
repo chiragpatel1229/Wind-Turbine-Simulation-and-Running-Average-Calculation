@@ -1,4 +1,4 @@
-# Software Developer Test Solutions by Chirag Patel
+# Software Developer Test Solutions
 
 Welcome to my GitHub repository containing solutions to two software development tests I completed as part of a job application process. These projects showcase my proficiency in Python, C++, real-time systems, and graphics programming using OpenGL, aligning with my expertise in automation, robotics, and software engineering.
 
